@@ -2,5 +2,4 @@
 DATASET="amazon-670k"
 wget https://archive.org/download/pecos-dataset/xmc-base/${DATASET}.tar.gz
 tar -zxvf ./${DATASET}.tar.gz
-mv ./xmc-base/ ./dataset/
-rm -rf ./${DATASET}.tar.gz
+cp -rf ./xmc-base ./dataset && rm -rf ./xmc-base
