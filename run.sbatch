@@ -1,10 +1,10 @@
 #!/bin/bash
 #SBATCH -J xrlinearledes                      # the job name
-#SBATCH --nodes=2             # node count
+#SBATCH --nodes=1             # node count
 #SBATCH --ntasks=1              # total number of tasks across all nodes
 #SBATCH --mem=40G
 #SBATCH -t 4:00:00
-#SBATCH --gres=gpu:4
+#SBATCH --gres=gpu:2
 #SBATCH --cpus-per-task=16             # use 1 thread per taks
 #SBATCH -N 1
 #SBATCH --partition=informatik-mind

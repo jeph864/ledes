@@ -324,7 +324,7 @@ class Reclusterer():
         with open(unused_labels_file, "wb") as writer:
             pkl.dump(unused_labels, writer)
 if __name__ == '__main__':
-    args = parse_evaluation_arguments()
+    args = parse_reclusterer_arguments()
 
     ledes_model = Reclusterer()
     ledes_model.reorganize(args)
