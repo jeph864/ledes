@@ -1,0 +1,6 @@
+*.ipynb*
+**/__pycache__
+model/**
+dataset/**
+dataset-binned
+output/**

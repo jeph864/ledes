@@ -1,0 +1,28 @@
+name: amazon-670k
+
+train:
+  inst_path: dataset/xmc-base/amazon-670k/tfidf-attnxml/X32.trn.npz
+  label_path: dataset/xmc-base/amazon-670k/Y.trn.npz
+  model_folder: model/amazon-670k
+  nr_splits: 16
+  beam_size: 10
+  
+
+ledes_clusterer:
+  inst_path: dataset/xmc-base/amazon-670k/tfidf-attnxml/X32.trn.npz
+  label_path: dataset/xmc-base/amazon-670k/Y.trn.npz
+  model_folder: model/amazon-670k
+  model-folder-output: model/amazon-670k-overlap
+  beam_size: 10
+  n_copies: 2
+
+ledes_train:
+  inst_path: dataset/xmc-base/amazon-670k/tfidf-attnxml/X32.trn.npz
+  label_path: dataset/xmc-base/amazon-670k/Y.trn.npz
+  code_path: model/amazon-670k-overlap
+  model_folder: model/amazon-670k-overlap
+  beam_size: 10
+
+ledes_evaluate:
+
+
